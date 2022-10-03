@@ -29,19 +29,6 @@ const config = {
     scene: initScenes()
 }
 
-class Preload extends Phaser.Scene {
 
-    constructor() {
-        super('PreloadScene');
-    }
+new Phaser.Game(config);
 
-    preload() {
-        this.load.image('sky', 'assets/sky.png');
-    }
-
-    create() {
-       this.scene.start('PlayScene')
-    }
-}
-
-export default Preload;
